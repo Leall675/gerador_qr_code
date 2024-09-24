@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555555;
+  font-family: roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 500px;
+  height: 280px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transform: ease .2s;
+}
+
+header h1{
+  margin-bottom: 10px;
+}
+
+header p{
+  margin-bottom: 10px;
+  opacity: .7;
+}
+
+main input,
+main button {
+  width: 100%;
+  border: none;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+main input {
+  margin-bottom: 20px;
+  border: 1px solid #777;
+}
+
+.active {
+  height: 570px;
+}
+
+#btnGerarQrCode {
+  background-color: rgb(0, 83, 36);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  cursor: pointer;
+  opacity: .8;
+}
+
+#btnGerarQrCode:hover {
+  opacity: 1;
+}
+
+#qr-code{
+  opacity: 0;
+
+}
+
+.container.active #qr-code {
+  opacity: 1;
+  border: 1px solid #777;
+  padding: 20px;
+  border-radius: 5px;
+}
